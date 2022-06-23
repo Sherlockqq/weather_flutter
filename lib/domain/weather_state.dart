@@ -10,6 +10,8 @@ abstract class WeatherState extends Equatable {
 
 class WeatherLoading extends WeatherState {}
 
+class WeatherEmpty extends WeatherState {}
+
 class WeatherError extends WeatherState {
   final String? message;
   const WeatherError(this.message);
